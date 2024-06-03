@@ -4,48 +4,518 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!--==================== UNICONS ====================-->
-        
+        <!--==================== ICONS  ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
         <link rel="stylesheet" href="">
         
         <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive Portfolio Website</title>
+        <title>Hélise Duhau | Marketing & Communication</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-            
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Hélise</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link">
+                                <i class="uil uil-estate nav__icon"></i> Accueil
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> A propos
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-file-check-alt nav__icon"></i> Compétences
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Expériences
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-books nav__icon"></i> Projets
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav_btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
-                
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/helise-duhau-marketing/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                            
+                            <a href="mailto:helise.duhau@hotmail.fr" target="_blank" class="home__social-icon">
+                                <i class="uil uil-at"></i>
+                            </a>
+                           
+                        </div>
+
+                        <div class="home__img">
+                        <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <mask id="mask0" mask-type="alpha">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                            </mask>
+                            <g mask="url(#mask0)">
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                                <image class="home__blob-img" x='0' y='0' xlink:href="assets/img/perfil.png"/>
+                            </g>
+                        </svg>
+                    </div>
+                    
+                        <div class="home__data">
+                            <h1 class="home__title">Hélise DUHAU</h1>
+                            <h3 class="home__subtitle">Brand Manager Junior</h3>
+                            <p class="home__description">Jeune diplômée spécialisée en marketing opérationnel et en gestion de projets, reconnue pour sa rigueur et sa curiosité.</p>
+                            <a href="#contact" class="button button--flex">
+                                Prenons contact ! <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                                <span class="home__scroll-name">Découvrez mon profil</span>
+                                <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                </div>
             </section>
 
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
-                
+                <h2 class="section__title">A propos</h2>
+                <span class="section__subtitle"><i>Caravan Palace - Miracle</i></span>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">Brand Manager Junior orientée business et client, mon rôle consiste à générer des leads par le développement de stratégies de communication, en collaboration avec les forces de vente.</p>
+
+                        <div class="about__info">
+                            <div>
+                                <span class="about__info-title">03</span>
+                                <span class="about__info-name">Années <br> d'expérience</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">05</span>
+                                <span class="about__info-name">Années <br> d'études</span>
+                            </div>
+
+                            <div>
+                                <span class="about__info-title">985</span>
+                                <span class="about__info-name">Score <br> TOEIC</span>
+                            </div>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
+                                Découvrez mon CV<i class="uil uil-file-download button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
+                <h2 class="section__title">Compétences</h2>
+                <span class="section__subtitle"><i>Survivor - Eye of the Tiger</i></span>
 
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-stopwatch skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skill__title">Gestion de projets</h1>
+                                    <span class="skills__subtitle">Anticiper & Déployer</span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                        
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Microsoft Planner</h3>
+                                        <span class="skills_description">Maîtrise</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__planner"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Scrum & Kanban </h3>
+                                        <span class="skills_description">Fonctionnel</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__agile"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SWOT & Pestel</h3>
+                                        <span class="skills_description">Maîtrise</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__swot"></span>
+                                    </div>
+                                </div>
+                            
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">GANTT & RACI</h3>
+                                        <span class="skills_description">Fonctionnel</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__GANTT"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== SKILLS 2 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-chart-line skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skill__title">Suivi des KPIs</h1>
+                                    <span class="skills__subtitle">Mesurer & Optimiser </span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                        
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Excel 2021</h3>
+                                        <span class="skills_description">Maîtrise</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__excel"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Salesforce</h3>
+                                        <span class="skills_description">Maîtrise</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__salesforce"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SAP</h3>
+                                        <span class="skills_description">Fonctionnel</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sap"></span>
+                                    </div>
+                                </div>
+                            
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Brandwatch</h3>
+                                        <span class="skills_description">Fonctionnel</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__brandwatch"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <!--==================== SKILLS 3 ====================-->
+                        <div class="skills__content skills__close">
+                            <div class="skills__header">
+                                <i class="uil uil-object-group skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skill__title">Création de contenu</h1>
+                                    <span class="skills__subtitle">Concevoir & Réaliser </span>
+                                </div>
+
+                                <i class="uil uil-angle-down skills__arrow"></i>
+                            </div>
+                        
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Canva</h3>
+                                        <span class="skills_description">Maîtrise</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__canva"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Hubspot</h3>
+                                        <span class="skills_description">Fonctionnel</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__hubspot"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Github Pages</h3>
+                                        <span class="skills_description">Apprenant</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__github"></span>
+                                    </div>
+                                </div>
+                            
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Suite Office</h3>
+                                        <span class="skills_description">Maîtrise</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__office"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--==================== QUALIFICATION ====================-->
             <section class="qualification section">
+                <h2 class="section__title">Parcours</h2>
+                <span class="section__subtitle"><i>Cody Fry - Underground</i></span>
 
+                <div class="qualiication__container container">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target ='#work'>
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Carrière
+                        </div>
+
+                        <div class="qualification__button button--flex" data-target ='#education'>
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Formation
+                        </div>
+                    </div>
+
+                    <div class="qualification__sections">
+                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="work">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Brand Manager Junior</h3>
+                                    <span class="qualification__subtitle">Etex Group | CDI</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2023 - Actuel
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Assistante Marketing</h3>
+                                    <span class="qualification__subtitle">Etex Group | Alternance</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 - 2023
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Marketing Digital & UX</h3>
+                                    <span class="qualification__subtitle">BRONZE ALU | Stage</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Avril 2021 - Septembre 2021
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 4 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+                                
+                                <div>
+                                    <h3 class="qualification__title">Marketing Digital & CRM</h3>
+                                    <span class="qualification__subtitle">MACEO-OGRANNA | Stage</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Avril 2020 - Juin 2020
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content" data-content id="education">
+                            <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Mini MBA in Marketing</h3>
+                                    <span class="qualification__subtitle">Mark Ritson | Marketing Week</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        Avril 2024 - Juin 2024
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 2 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Master 2 Marketing - Vente</h3>
+                                    <span class="qualification__subtitle">ISM-IAE | Paris-Saclay</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2021 - 2023
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Licence 3 Gestion</h3>
+                                    <span class="qualification__subtitle">ISM-IAE | Paris-Saclay</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020 - 2021
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                            <!--==================== QUALIFICATION 4 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line"></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">DUT GACO</h3>
+                                    <span class="qualification__subtitle">IUT Rambouillet | Paris-Saclay</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2018 - 2020
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!--==================== SERVICES ====================-->
             <section class="services section" id="services">
-                
+                <h2 class="section__title">Expériences</h2>
+                <span class="section__subtitle"><i>Louis Zong - Baguette Bop</i></span>
+
+
             </section>
 
             <!--==================== PORTFOLIO ====================-->
@@ -81,6 +551,6 @@
         <script src=""></script>
 
         <!--==================== MAIN JS ====================-->
-        <script src=""></script>
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
