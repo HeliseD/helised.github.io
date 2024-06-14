@@ -1001,6 +1001,13 @@ img {
   color: var(--first-color-lighter);
 }
 
+.footer__copy{
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--mb-3);
+}
+
 .footer__title,
 .footer__subtitle,
 .footer__link,
@@ -1117,6 +1124,11 @@ img {
   .testimonial__description{
     text-align: center;
   }
+
+  .footer__copy{
+    font-size: var(--smaller-font-size);
+    padding: 1rem;
+  }
 }
 
 /* For medium devices */
@@ -1144,6 +1156,10 @@ img {
     display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
+  }
+
+  .footer__copy{
+    padding: 1rem;
   }
 }
 
