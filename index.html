@@ -80,8 +80,8 @@
                                 <i class="uil uil-linkedin"></i>
                             </a>
                             
-                            <a href="mailto:helise.duhau@hotmail.fr" target="_blank" class="home__social-icon">
-                                <i class="uil uil-at"></i>
+                            <a href="mailto:helise.duhau+porfolio@hotmail.fr" target="_blank" class="home__social-icon">
+                                <i class="uil uil-envelope"></i>
                             </a>
                            
                         </div>
@@ -155,7 +155,7 @@
                         </div>
 
                         <div class="about__buttons">
-                            <a download="" href="assets/pdf/Alexa-Cv.pdf" class="button button--flex">
+                            <a download="" href="assets/pdf/Helise DUHAU - CV.pdf" target="_blank" class="button button--flex">
                                 Télécharger mon CV<i class="uil uil-file-download button__icon"></i>
                             </a>
                         </div>
@@ -949,31 +949,33 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form grid">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact__form grid">
                         <div class="contact__inputs grid">
+                                <!-- Replace with your Access Key -->
+                            <input type="hidden" name="access_key" value="71e06d08-ddbd-412d-a061-b5acee8012cf">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Nom</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" name="Nom" class="contact__input" required>
                             </div>
                             <div class="contact__content">
-                                <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <label for="" class="contact__label">Adresse mail</label>
+                                <input type="email" name="Mail" class="contact__input" required>
                             </div>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Objet</label>
-                            <input type="text" class="contact__input">
+                            <label for="" class="contact__label">Société</label>
+                            <input type="text" name="Entreprise" class="contact__input" required>
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Message</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <textarea name="Message" id="" cols="0" rows="7" class="contact__input" required></textarea>
                         </div>
 
                         <div>
-                            <a href="" class="button button--flex">
+                            <button href="" type="submit" class="button button--form">
                                 Envoyer
                                 <i class="uil uil-message button__icon"></i>
-                            </a>
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -1006,7 +1008,7 @@
                             <i class="uil uil-linkedin"></i>
                         </a>
 
-                        <a href="mailto:helise.duhau@hotmail.fr" target="_blank" class="footer__social">
+                        <a href="mailto:helise.duhau+porfolio@hotmail.fr" target="_blank" class="footer__social">
                             <i class="uil uil-envelope"></i>
                         </a>
                     </div>

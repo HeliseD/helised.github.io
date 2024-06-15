@@ -415,6 +415,15 @@ img {
   align-items: center;
 }
 
+.button--form{
+  font-size: var(--font-medium);
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
 .button--small{
   padding: .75rem 1rem;
 }
